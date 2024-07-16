@@ -11,7 +11,7 @@ body {
 }
 
 .main {
-    background-image: url(Assets/Images/bg.jpg);
+    background-image: url(./Assets/Images/bg.webp);
     height: 698px;
     position: relative;
     background-repeat: no-repeat;
