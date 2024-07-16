@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(Assets/Images/bg.jpg);
+    height: 698px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    /* keeps the bg in center on resizing the window  */
+    background-position: center center;
+}
+
+/* dummy box to decrease opacity of bg  */
+.main .box {
+    position: absolute;
+    top: 0;
+    height: 105vh;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+
+}
+
+nav {
+
+    max-width: 60vw;
+    margin-top: 10vh;
+    /* margin auto centers the navbar */
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 92px;
+
+}
+
+nav img {
+    color: red;
+    height: 130px;
+    /* to put logo above the dummy div do this  */
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    /* to put buttons above the dummy div do this  */
+    position: relative;
+    z-index: 10;
+}
+
+/* Styling for text  */
+
+.textbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: calc(100% - 92px);
+    gap: 23px;
+    padding: 0 30px;
+    flex-direction: column;
+    font-family: Martel Sans;
+    color: white;
+}
+
+/* textbox ka immidiate first child  */
+.textbox> :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.textbox> :nth-child(2) {
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.textbox> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* seperation bar  */
+.seperation {
+    height: 11px;
+    background-color: rgb(53, 53, 53);
+}
+
+/* buttons styling  */
+
+.textbox-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+}
+
+.btn {
+    padding: 5px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(14, 13, 13, 0.537);
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 7px;
+
+}
+
+.btn-red-sm {
+    padding: 5px 12px;
+    color: white;
+    background-color: #ef0101;
+    border: none;
+    border-radius: 4px;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+.btn-red-sm:hover {
+    background-color: rgb(207, 2, 2);
+
+
+}
+
+.btn-red {
+    padding: 5px 12px;
+    margin: 0 7px;
+    color: white;
+    background-color: #ef0101;
+    border: none;
+    border-radius: 4px;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 25px;
+    transition: 0.2s ease;
+}
+
+.btn-red:hover {
+    background-color: rgb(207, 2, 2);
+
+}
+
+/* input styling  */
+input {
+    padding: 10px 12px;
+    color: white;
+    background-color: rgba(14, 13, 13, 0.537);
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    border-radius: 4px;
+    width: 338px;
+    font-family: poppins;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+/* Section 1 styling  */
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+    padding: 5vh 0;
+}
+
+.first-text {
+    z-index: 10;
+    font-family: martel sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.first-text span {
+    font-size: 40px;
+    line-height: 100px;
+    font-weight: 900;
+}
+
+.firstimg {
+    position: relative;
+}
+
+.firstimg img {
+    width: 30vw;
+    position: relative;
+    width: 555px;
+    z-index: 10;
+}
+
+.firstimg video {
+    position: absolute;
+    width: 421px;
+    top: 79px;
+    right: 61px;
+}
+
+.seperation2 {
+    height: 11px;
+    background-color: rgb(21 21 21);
+}
+
+
+/* section 2 styling  */
+
+.second .first-text {
+    line-height: 40px;
+}
+
+.second .first-text span {
+    line-height: 40px;
+}
+
+/* card styling  */
+.card {
+    position: relative;
+    top: 131px;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: black;
+    right: 435px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.248);
+
+}
+
+.card img {
+    width: 52px;
+    margin: 10px;
+}
+
+.card div {
+    font-family: poppins;
+    font-weight: 800;
+    margin: 0 17px;
+}
+
+.card div span {
+    font-family: poppins;
+    font-size: 12px;
+    font-weight: 300;
+    color: blue;
+}
+
+
+/* .card div img {} */
+
+
+
+/* Section 3  */
+
+.third .firstimg video {
+    position: absolute;
+    width: 349px;
+    top: 32px;
+    right: 106px;
+}
+
+/* Section 5 - Faq  */
+
+.faq {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.faq h2 {
+    margin: 34px 0px -17px 0px;
+    font-size: 48px;
+    font-weight: 900;
+    font-family: martel sans;
+}
+
+.faqbox {
+
+    transition: all 0.3s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    width: 76vw;
+    margin: 34px auto -24px auto;
+    cursor: pointer
+}
+
+.faqbox-last {
+
+    transition: all 0.3s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    width: 76vw;
+    margin: 34px auto;
+    cursor: pointer
+}
+
+.faqbox:hover {
+    background-color: #4e4e4e;
+}
+
+.faqbox-last:hover {
+    background-color: #4e4e4e;
+}
+
+.faq-bottom-contents .textbox-btns {
+    margin: auto 0 70px 0;
+}
+
+/* footer  */
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+footer .question {
+    margin: 34px;
+}
+
+footer .question a {
+    color: rgb(159, 159, 159);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 138px;
+
+}
+
+.footer a {
+    font-size: 14px;
+    color: rgb(159, 159, 159);
+}
+
+footer div {
+    display: grid;
+    /* border: 1px solid red; */
+
+}
+
+.footer-items {
+    margin: auto;
+    gap: 12px;
+}
+
+.footer-items a {}
